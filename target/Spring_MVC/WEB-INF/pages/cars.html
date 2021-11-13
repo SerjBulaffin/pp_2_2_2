@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://java.sun.com/xml/ns/persistence/orm">
+<head>
+    <meta charset="UTF-8">
+    <title>Cars list</title>
+</head>
+<body>
+<font size="16" color="#b22222"><b><i>Cars list</i></b></font>
+<table border="1" style="width:500px">
+    <tr>
+        <th>Model car</th>
+        <th>Volume engine</th>
+        <th>Year</th>
+    </tr>
+    <tr th:each="i:${carlist}">
+        <td th:text="${i.getModel()}"></td>
+        <td th:text="${i.getVolume()}"></td>
+        <td th:text="${i.getYear()}"></td>
+    </tr>
+</table>
+</body>
+</html>
