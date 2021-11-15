@@ -9,9 +9,9 @@ import java.util.stream.Collectors;
 
 @Component
 public class UserDaoImpl implements UserDao {
-    private static List<Car> carList = new ArrayList<>();
+    private List<Car> carList = new ArrayList<>();
 
-    static {
+    {
         carList.add(new Car("Bmw X5", 3.5, 2017));
         carList.add(new Car("Mersedes Benz s200", 2.4, 2010));
         carList.add(new Car("Hyundai Solaris", 1.8, 2016));
